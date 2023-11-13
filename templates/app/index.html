@@ -9,31 +9,34 @@
 </head>
 <body>
     <header>
-        <h1>Bem-Vindo à Marcenaria do Alemão</h1>
+        <div class="title_page">
+            <img class="imagem_logo" src="{% static 'images\logo_marcenaria-removebg.png' %}" alt="Imagem logo">
+            <h1 id="home" class="text_navbar">Marcenaria do Alemão</h1>
+        </div>
     </header>
 
     <nav>
-        <a href="#">Início</a>
-        <a href="#">Sobre</a>
-        <a href="#">Portfólio</a>
-        <a href="#">Contato</a>
+        <a class="text_nav_options" href="#home">Início</a>
+        <a class="text_nav_options" href="#about">Sobre</a>
+        <a class="text_nav_options" href="#contactId">Contato</a>
     </nav>
 
     <div class="container">
         <div class="main-content">
             <h2>Conheça Nossa Marcenaria</h2>
-            <p>Somos especializados na criação de móveis artesanais, feitos sob medida para tornar seu espaço único e aconchegante.</p>
+            <p>Somos especializados na criação de móveis feitos sob medida para tornar seu espaço único e aconchegante.</p>
 
-            <h2>Nossos Projetos</h2>
-
-        
-            <div class="carousel">
+            <div class="carousel" id="myCarousel">
                 <img src="{% static 'images/image_cozinha.jpg' %}" alt="Projeto 1">
-                <img src="{% static 'home_page/carousel2.jpg' %}" alt="Projeto 2">
-                <img src="{% static 'home_page/carousel3.jpg' %}" alt="Projeto 3">
+                <img src="{% static 'images/cozinha_cinza.jpg' %}" alt="Projeto 2">
+                <img src="{% static 'images/image_cozinha.jpg' %}" alt="Projeto 3">
             </div>
 
-            <h2>Missão, Visão e Valores</h2>
+            <div> 
+                <button href="#" class="btn-orcamento">Faça um orçamento</button>
+            </div>
+
+            <h2 id="about" >Missão, Visão e Valores</h2>
             <div class="mission-vision-values">
                 <div class="section">
                     <h3>Missão</h3>
@@ -51,31 +54,42 @@
                 </div>
             </div>
 
-            <h2>Projetos Feitos</h2>
+            <h2>Projetos que Podemos Realizar</h2>
 
             <div class="project">
-                <img src="{% static 'home_page/project1.jpg' %}" alt="Projeto Realizado 1">
-                <h3>Mesa de Centro Rústica</h3>
-                <p>Uma mesa única que adiciona charme rústico à sua sala de estar.</p>
+                <img src="{% static 'images/cozinha_branca.jpg' %}" alt="Cozinha Planejada">
+                <h3>Cozinha Planejada</h3>
+                <p>Crie a cozinha dos seus sonhos com nossos projetos de cozinha planejada, combinando funcionalidade e estilo.</p>
+            </div>
+            
+            <div class="project">
+                <img src="{% static 'images/banheiro_planejado.jpg' %}" alt="Banheiro Planejado">
+                <h3>Banheiro Planejado</h3>
+                <p>Transforme seu banheiro em um espaço elegante e funcional com nossos projetos de banheiro planejado.</p>
+            </div>
+            
+            <div class="project">
+                <img src="{% static 'images/espaço_home_office.jpg' %}" alt="Canto Home Office">
+                <h3>Espaço Home Office</h3>
+                <p>Crie um espaço de trabalho confortável e produtivo com nossos projetos de home office.</p>
+            </div>
+            
+            <div class="project">
+                <img src="{% static 'images/quarto_planejado.jpg' %}" alt="Quarto planejado">
+                <h3>Quarto Personalizado</h3>
+                <p>Torne o seu quarto único e especial com nossos projetos de quarto personalizado.</p>
             </div>
 
-            <div class="project">
-                <img src="{% static 'home_page/project2.jpg' %}" alt="Projeto Realizado 2">
-                <h3>Cadeiras Personalizadas</h3>
-                <p>Cadeiras exclusivas projetadas para conforto e elegância.</p>
+            <div> 
+                <button href="#" class="btn-orcamento">Faça um orçamento</button>
             </div>
-
-            <div class="project">
-                <img src="{% static 'home_page/project3.jpg' %}" alt="Projeto Realizado 3">
-                <h3>Armário de Madeira Maciça</h3>
-                <p>Um armário robusto e durável, feito para durar gerações.</p>
-            </div>
+            
         </div>
     </div>
 
     <footer>
         <div class="contact">
-            <h2>Entre em Contato</h2>
+            <h2 id="contactId">Entre em Contato</h2>
             <p>Ficamos felizes em atendê-lo. Preencha o formulário abaixo ou entre em contato diretamente por e-mail ou telefone.</p>
             <form action="#" method="post">
                 <label for="email">Email:</label>
@@ -90,5 +104,30 @@
 
         &copy; 2023 Marcenaria do Alemão
     </footer>
+
+    <script>
+        // Adiciona funcionalidade de carrossel simples com JavaScript
+        let currentIndex = 0;
+        const carouselImages = document.querySelectorAll('.carousel img');
+        const totalImages = carouselImages.length;
+
+        function showImage(index) {
+            carouselImages.forEach((image, i) => {
+                image.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            showImage(currentIndex);
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            showImage(currentIndex);
+        }
+
+        setInterval(nextImage, 3000); // Altera a imagem a cada 3 segundos
+    </script>
 </body>
 </html>
