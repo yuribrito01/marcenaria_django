@@ -1,0 +1,170 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f0e1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4c362b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+nav {
+    background-color: #6d5041;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: #e2ccb3;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 24px;
+    color: #4c362b;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.mission-vision-values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.mission-vision-values .section {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #4c362b;
+}
+
+.project p {
+    font-size: 14px;
+    color: #6d5041;
+}
+
+footer {
+    background-color: #4c362b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.contact {
+    max-width: 100%;
+}
+
+.contact h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #6d5041;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4c362b;
+}
+
+
+@media screen and (max-width: 600px) {
+    nav a {
+        font-size: 16px;
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+
+    .carousel img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .mission-vision-values .section {
+        width: 100%;
+    }
+}

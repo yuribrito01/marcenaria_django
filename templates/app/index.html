@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcenaria do Alemão</title>
+    <link rel="stylesheet" href="{% static 'home_page/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Bem-Vindo à Marcenaria do Alemão</h1>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Portfólio</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Conheça Nossa Marcenaria</h2>
+            <p>Somos especializados na criação de móveis artesanais, feitos sob medida para tornar seu espaço único e aconchegante.</p>
+
+            <h2>Nossos Projetos</h2>
+
+        
+            <div class="carousel">
+                <img src="{% static 'images/image_cozinha.jpg' %}" alt="Projeto 1">
+                <img src="{% static 'home_page/carousel2.jpg' %}" alt="Projeto 2">
+                <img src="{% static 'home_page/carousel3.jpg' %}" alt="Projeto 3">
+            </div>
+
+            <h2>Missão, Visão e Valores</h2>
+            <div class="mission-vision-values">
+                <div class="section">
+                    <h3>Missão</h3>
+                    <p>Proporcionar móveis personalizados de alta qualidade, superando as expectativas de nossos clientes.</p>
+                </div>
+
+                <div class="section">
+                    <h3>Visão</h3>
+                    <p>Ser reconhecida como a melhor marcenaria, destacando-se pela excelência em design e artesanato.</p>
+                </div>
+
+                <div class="section">
+                    <h3>Valores</h3>
+                    <p>Comprometimento, qualidade, inovação, e respeito ao meio ambiente.</p>
+                </div>
+            </div>
+
+            <h2>Projetos Feitos</h2>
+
+            <div class="project">
+                <img src="{% static 'home_page/project1.jpg' %}" alt="Projeto Realizado 1">
+                <h3>Mesa de Centro Rústica</h3>
+                <p>Uma mesa única que adiciona charme rústico à sua sala de estar.</p>
+            </div>
+
+            <div class="project">
+                <img src="{% static 'home_page/project2.jpg' %}" alt="Projeto Realizado 2">
+                <h3>Cadeiras Personalizadas</h3>
+                <p>Cadeiras exclusivas projetadas para conforto e elegância.</p>
+            </div>
+
+            <div class="project">
+                <img src="{% static 'home_page/project3.jpg' %}" alt="Projeto Realizado 3">
+                <h3>Armário de Madeira Maciça</h3>
+                <p>Um armário robusto e durável, feito para durar gerações.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contact">
+            <h2>Entre em Contato</h2>
+            <p>Ficamos felizes em atendê-lo. Preencha o formulário abaixo ou entre em contato diretamente por e-mail ou telefone.</p>
+            <form action="#" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        &copy; 2023 Marcenaria do Alemão
+    </footer>
+</body>
+</html>
