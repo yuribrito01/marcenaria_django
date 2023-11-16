@@ -32,8 +32,8 @@
                 <img src="{% static 'images/image_cozinha.jpg' %}" alt="Projeto 3">
             </div>
 
-            <div> 
-                <button href="#" class="btn-orcamento">Faça um orçamento</button>
+            <div class="button-container"> 
+                <button href="#contactId" class="btn-orcamento">Faça um orçamento</button>
             </div>
 
             <h2 id="about" >Missão, Visão e Valores</h2>
@@ -80,8 +80,8 @@
                 <p>Torne o seu quarto único e especial com nossos projetos de quarto personalizado.</p>
             </div>
 
-            <div> 
-                <button href="#" class="btn-orcamento">Faça um orçamento</button>
+            <div class="button-container"> 
+                <button href="#contactId" class="btn-orcamento">Faça um orçamento</button>
             </div>
             
         </div>
@@ -90,23 +90,30 @@
     <footer>
         <div class="contact">
             <h2 id="contactId">Entre em Contato</h2>
-            <p>Ficamos felizes em atendê-lo. Preencha o formulário abaixo ou entre em contato diretamente por e-mail ou telefone.</p>
+            <p>Ficamos felizes em atendê-lo. Preencha o formulário abaixo ou entre em contato diretamente por e-mail, telefone ou whatsApp.</p>
+
+            <div> 
+                <p> WhatsApp: (19) 988113648</p>
+                <p> Email: marcenarialemao@hotmail.com</p>
+            </div>
             <form action="#" method="post">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input class="input-box" type="email" id="email" name="email" required>
 
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required>
+                <input  class="input-box" type="tel" id="telefone" name="telefone" required>
+
 
                 <button type="submit">Enviar</button>
             </form>
+            <div class="button-container">
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.1166890511304!2d-47.123847124688446!3d-22.945929279227613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c83470d41e5d%3A0xe39789b4ac3e96e7!2sR.%20Jos%C3%A9%20Augusto%20de%20Mattos%2C%20557%20-%20Parque%20Res.%20Vila%20Uni%C3%A3o%2C%20Campinas%20-%20SP%2C%2013060-748!5e0!3m2!1spt-BR!2sbr!4v1699969115722!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-
         &copy; 2023 Marcenaria do Alemão
     </footer>
 
     <script>
-        // Adiciona funcionalidade de carrossel simples com JavaScript
         let currentIndex = 0;
         const carouselImages = document.querySelectorAll('.carousel img');
         const totalImages = carouselImages.length;

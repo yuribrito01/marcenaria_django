@@ -23,8 +23,13 @@ header {
    text-decoration: none;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
 .btn-orcamento {
-    display: inline-block;
     padding: 10px 20px;
     background-color: #4CAF50; 
     color: #fff; 
@@ -32,7 +37,6 @@ header {
     border-radius: 5px; 
     transition: background-color 0.3s ease;
 }
-
 .btn-orcamento:hover {
     background-color: #45a049;
 }
@@ -128,7 +132,7 @@ footer {
 }
 
 .contact {
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .contact h2 {
@@ -154,24 +158,34 @@ label {
     margin-bottom: 5px;
 }
 
-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-}
 
 button {
-    background-color: #6d5041;
+    background-color: #d4bfb4;
     color: #fff;
     padding: 10px;
     border: none;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 button:hover {
     background-color: #4c362b;
+}
+
+.input-box{
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.maps {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 
